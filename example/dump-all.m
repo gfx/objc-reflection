@@ -34,14 +34,19 @@
 
 @implementation C {
     int ivarOfC;
+
+    @private
+    double privateIvarOfC;
 }
 @end
 
 int main() {
     A *b = [[B alloc] init];
     A *c = [[C alloc] init];
+    (void)b;
+    (void)c;
 
-    return b != c;
+    return 0;
 }
 
 // vim: set expandtab:

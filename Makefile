@@ -1,4 +1,7 @@
 
+try: bin/x
+	bin/x
+
 bin/x: example/dump-all.m bin/reflection.o
 	clang -Isrc -ObjC -fobjc-arc -Wall -Wextra -o $@ $< bin/reflection.o
 
